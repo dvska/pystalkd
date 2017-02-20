@@ -2,7 +2,7 @@
 
 """pystalkd - A beanstalkd Client Library for Python3 - Based on https://github.com/earl/beanstalkc"""
 from contextlib import contextmanager
-import socket
+from gevent import socket
 from datetime import timedelta
 from .Job import Job
 
